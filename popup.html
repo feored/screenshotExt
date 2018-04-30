@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Screenshot</title>
+    <style>
+    	body {
+    		margin:0;
+			padding:0;
+            font-family:Tahoma, Geneva, sans-serif;
+		}
+    	ul {
+    		list-style-type: none;
+    		padding:0;
+    		margin:0;
+    		width:150px;
+    	}
+
+    	li {
+    		border-bottom: 1px solid #d5e3fa;
+    	}
+
+    	img{
+    		padding:0;
+    	}
+
+    	span{
+    		margin-left:5px;
+    		vertical-align: top;
+    		padding-bottom:3px;
+    		font-size: 12px;
+    	}
+
+    	a{
+    		display:block;
+    		text-decoration:none;
+    		padding:10px;
+    		color:black;
+    		transition-timing-function: ease-out;
+    		transition: color 0.25s, background-color 0.25s;
+    	}
+
+    	a:hover{
+    		background-color: #628bce;
+    		color:white;
+    	}
+    </style>
+  </head>
+  <body>
+  		<ul>
+  			<li>
+  				<a id="custom" href="#">
+					<img src="images/smallcus.png"></img>
+	    			<span>Custom Size</span>
+    			</a>
+    		</li>
+    		<li>
+    			<a id="current" href="#">
+			    	<img src="images/smallvis.png"></img>
+	    			<span>Visible Screen</span>
+	    		</a>
+    		</li>
+    		<li style="border:none !important;">
+    			<a id="full" href="#">
+			    	<img src="images/smallfull.png"></img>
+			    	<span>Full Page</span>
+		    	</a>
+    		</li>
+    	</ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
